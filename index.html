@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppNep — Your App & Video Gateway</title>
+    <meta name="description" content="Discover AppNep - Easily open the AppNep official app and access our helpful YouTube video tutorials from one clean, responsive landing page.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://appnep.com/">
+    <meta property="og:title" content="AppNep — Your App & Video Gateway">
+    <meta property="og:description" content="Access the official AppNep app and watch helpful video tutorials directly from one simple page.">
+    <meta property="og:image" content="assets/hero-mockup.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large">
+    <meta property="twitter:url" content="https://appnep.com/">
+    <meta property="twitter:title" content="AppNep — Your App & Video Gateway">
+    <meta property="twitter:description" content="Access the official AppNep app and watch helpful video tutorials directly from one simple page.">
+    <meta property="twitter:image" content="assets/hero-mockup.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons for clean SaaS look (locked to version with brand icon support) -->
+    <script src="https://unpkg.com/lucide@0.321.0"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="container navbar-container">
+            <a href="#home" class="logo" id="logo-link">
+                <span class="logo-dot"></span>AppNep
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#app" class="nav-link js-app-link">App</a></li>
+                    <li class="nav-item"><a href="#youtube" class="nav-link js-youtube-link">YouTube</a></li>
+                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="contact-nav-trigger">Contact</a></li>
+                </ul>
+                <div class="nav-actions-mobile">
+                    <a href="https://appnep.com/app" class="btn btn-primary js-app-btn">Open App</a>
+                </div>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="https://appnep.com/app" class="btn btn-primary js-app-btn">
+                    <span>Open App</span>
+                    <i data-lucide="external-link"></i>
+                </a>
+            </div>
+
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge">
+                        <span class="badge-dot"></span>
+                        <span>Now Live</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Discover AppNep — <br><span class="gradient-text">Your App Gateway</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Access our app and watch helpful videos directly from one simple page. Sleek, fast, and built for your productivity.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="https://appnep.com/app" class="btn btn-primary btn-lg js-app-btn">
+                            <i data-lucide="play" class="btn-icon"></i>
+                            <span>Open App</span>
+                        </a>
+                        <a href="https://youtube.com/" class="btn btn-secondary btn-lg js-youtube-btn" target="_blank" rel="noopener noreferrer">
+                            <i data-lucide="youtube" class="btn-icon color-red"></i>
+                            <span>Watch on YouTube</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-glow"></div>
+                    <div class="mockup-wrapper">
+                        <img src="assets/hero-mockup.png" alt="AppNep App Mockup Dashboard" class="hero-mockup-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- App Link Section -->
+        <section class="app-section" id="app">
+            <div class="container">
+                <div class="card app-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content-wrapper">
+                        <div class="card-icon-box">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+                        <div class="card-details">
+                            <h2 class="section-title">Get the App</h2>
+                            <p class="section-desc">
+                                Click below to access the official AppNep app. Experience a seamless tool designed to elevate your everyday workflows on any device.
+                            </p>
+                            <a href="https://appnep.com/app" class="btn btn-primary btn-lg js-app-btn">
+                                <span>Open App</span>
+                                <i data-lucide="arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Section -->
+        <section class="youtube-section" id="youtube">
+            <div class="container">
+                <div class="card youtube-card">
+                    <div class="card-glow"></div>
+                    <div class="card-content-wrapper">
+                        <div class="card-icon-box youtube-icon-box">
+                            <i data-lucide="video"></i>
+                        </div>
+                        <div class="card-details">
+                            <h2 class="section-title">Watch Our Videos</h2>
+                            <p class="section-desc">
+                                Learn more, watch tutorials, and stay updated through our YouTube content. Subscribe to get tips and walkthroughs from our channel.
+                            </p>
+                            <a href="https://youtube.com/" class="btn btn-youtube btn-lg js-youtube-btn" target="_blank" rel="noopener noreferrer">
+                                <i data-lucide="youtube"></i>
+                                <span>Visit YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2 class="section-title">Why Use AppNep?</h2>
+                    <p class="section-desc max-width-600">
+                        Everything you need to navigate our platform and master its features efficiently.
+                    </p>
+                </div>
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>Easy Access</h3>
+                        <p>Quickly open the app from one place without searching through bookmarks or links.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="tv"></i>
+                        </div>
+                        <h3>Helpful Videos</h3>
+                        <p>Watch step-by-step tutorials and stay updated with product updates on YouTube.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i data-lucide="monitor-smartphone"></i>
+                        </div>
+                        <h3>Mobile Friendly</h3>
+                        <p>Works smoothly on phones, tablets, and desktops with our fully responsive design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo">AppNep</a>
+                <p class="footer-tagline">Access our tools and content seamlessly.</p>
+            </div>
+            <div class="footer-links-group">
+                <ul class="footer-nav">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#app" class="footer-link js-app-link">App</a></li>
+                    <li><a href="#youtube" class="footer-link js-youtube-link">YouTube</a></li>
+                    <li><a href="#" class="footer-link" id="contact-footer-trigger">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AppNep. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contact-modal" aria-hidden="true" role="dialog">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-container">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <h3>Get in Touch</h3>
+                <p>Have questions about AppNep? Send us a message.</p>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-full">Send Message</button>
+            </form>
+            <div class="form-success-msg" id="form-success">
+                <div class="success-icon">
+                    <i data-lucide="check-circle-2"></i>
+                </div>
+                <h4>Thank You!</h4>
+                <p>Your message has been sent successfully. We'll get back to you shortly.</p>
+                <button type="button" class="btn btn-secondary mt-4" id="success-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="app.js"></script>
+</body>
+</html>
