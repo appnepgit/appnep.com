@@ -153,4 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
     revealElements.forEach(elem => {
         revealObserver.observe(elem);
     });
+
+    // 7. Under Construction Centered Banner
+    // The banner is set to always display on page load. No dismissal logic is required.
 });

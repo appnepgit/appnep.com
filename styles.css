@@ -54,6 +54,7 @@
     --radius-xl: 32px;
     --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-elastic: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    --banner-height: 44px;
 }
 
 /* Reset and Base Styles */
@@ -751,6 +752,118 @@ ul {
 .form-success-msg p {
     color: var(--text-secondary);
     font-size: 0.95rem;
+}
+
+/* ==========================================================================
+   Under Construction Banner (Centered Overlay) Styling
+   ========================================================================== */
+.construction-overlay {
+    display: none;
+}
+
+.construction-banner-center {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 90%;
+    max-width: 480px;
+    background: rgba(15, 23, 42, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 2px solid hsl(35, 100%, 50%);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    color: #ffffff;
+    z-index: 1500;
+    box-shadow: 0 10px 40px rgba(15, 23, 42, 0.5), 0 0 30px rgba(234, 88, 12, 0.25);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+body.has-banner-center .construction-banner-center {
+    opacity: 1;
+    pointer-events: none;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Blinking animations */
+.blinking-border {
+    animation: border-blink 2s infinite ease-in-out;
+}
+
+@keyframes border-blink {
+    0%, 100% { 
+        border-color: hsl(35, 100%, 50%); 
+        box-shadow: 0 10px 40px rgba(15, 23, 42, 0.5), 0 0 30px rgba(234, 88, 12, 0.3);
+    }
+    50% { 
+        border-color: rgba(234, 88, 12, 0.2); 
+        box-shadow: 0 10px 40px rgba(15, 23, 42, 0.5), 0 0 10px rgba(234, 88, 12, 0.05);
+    }
+}
+
+.blinking-warning {
+    animation: warning-blink 1.5s infinite ease-in-out;
+}
+
+@keyframes warning-blink {
+    0%, 100% { 
+        opacity: 1; 
+        text-shadow: 0 0 12px hsl(35, 100%, 50%);
+    }
+    50% { 
+        opacity: 0.3; 
+        text-shadow: none;
+    }
+}
+
+.banner-center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-center-icon {
+    font-size: 3rem;
+    color: hsl(35, 100%, 50%);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-center-icon i {
+    width: 64px;
+    height: 64px;
+}
+
+.banner-center-title {
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+}
+
+.banner-center-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.banner-center-ctas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.banner-center-ctas .btn {
+    width: 100%;
 }
 
 /* ==========================================================================

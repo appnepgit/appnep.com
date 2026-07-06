@@ -1,0 +1,14 @@
+{
+  "name": "appnep.com",
+  "version": "1.0.0",
+  "description": "AppNep Landing Page",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3001",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}
